@@ -1,0 +1,71 @@
+\section{\textbf{Estrutura da equipe}}
+\label{sec: Estrutura da equipe}
+
+
+\begin{commentA}
+
+\par \end{commentA}
+
+\vspace*{0.3cm}
+\begin{figure}[!htbp]
+	\begin{footnotesize}
+		\raggedright
+		\captionsetup{textfont=bf, labelfont=bf, font=footnotesize, justification=centering}
+		\caption{Orgonograma.} \label{Orgonograma}
+		\vspace*{-0.3cm}
+\begin{forest} for tree={anchor=base west,
+		grow=east,
+		growth parent anchor=east,
+		parent anchor=east,
+		child anchor=west,l sep+=1em,s sep=5mm,
+		edge path={\noexpand\path[\forestoption{edge},->, >={latex}] 
+			(!u.parent anchor) -- +(1em,0pt) |- (.child anchor)
+			\forestoption{edge label};}
+	}
+	[Nonlinear Stochastic Systems, root
+	[Chapter 8\\ Complex Networks, tnode, name=eight]
+	[Chapter 7\\ Networked Control Systems, tnode, name=seven] 
+	[Chapter 5\\Gene Regulatory Networks, tnode, name=five]
+	[Chapter 11\\randomly varying nonlinearities, tnode, name=eleven
+	[Defining node and arrow styles, onode
+	[Adding shading, dnode]
+	[Adding shading, dnode]
+	[oi, dnode, name=nine] ] ]
+	[Chapter 6 \, 10\\missing measurement, tnode
+	[Defining node and arrow styles, onode
+	[Setting shape, tnode
+	[Adding shading, dnode]
+	[Adding shading, dnode]
+	[Adding shading, dnode] ] ] fitting={(!nnn) (!n) (!nn)}]
+	[Chapter 9\\randomly occurring nonlinearities, tnode
+	[Defining node and arrow styles, onode
+	[Setting shape, tnode
+	[Adding shading, dnode]
+	[Adding shading, dnode]
+	[Adding shading, dnode] ] ] ]
+	[01 Gerente B, onode
+	[Setting shape, tnode]
+	[Choosing color, tnode]
+	[Adding shading, tnode] ]
+	[01 Gerente A, onode
+	[02 Supervisor C, tnode
+	[03 Analista C3, dnode]
+	[03 Analista C2, dnode]
+	[03 Analista C1, dnode] ]
+	[02 Supervisor B, tnode
+	[03 Analista B, dnode] ]
+	[02 Supervisor A, tnode
+	[03 Analista A, dnode] ] ]
+	] ]
+	%
+	\node [draw, dashed, black!40, inner sep=.4em, fit={(eight) (five) (seven)}, label={[align=left]0:Applications to\\Complex Systems,\\NCSs, GRNs}] {};
+	%\node [draw, dashed, black!40, inner sep=.4em, fit={(eleven) (nine)}, label={[align=left]0:Analysis of\\something complex\\more text}] {};
+\end{forest}
+	\vspace*{-0.5cm}
+\par
+\bigskip
+Fonte: Compilado pelo SPSS da pesquisa de campo
+\end{footnotesize}
+\end{figure} 
+\par
+

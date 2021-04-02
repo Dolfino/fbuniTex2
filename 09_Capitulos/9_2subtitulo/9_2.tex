@@ -1,0 +1,102 @@
+\section{\textbf{9.2 Descrição Financeira}}
+\label{sec: 9.2 Descrição Financeira}
+
+
+
+\vspace*{0.3cm}
+\begin{table}[!htbp]
+	\raggedright.
+	\caption{Faixa etária}
+	\vspace*{-0.3cm}
+	\pgfplotstableread[row sep=\\,col sep=&]{
+		interval  & carR \\
+		17        & 16.15  \\
+		18--23    & 14.98  \\
+		24--30    & 19.84 \\
+		31--40    & 16.93 \\
+		41--54    & 15.95 \\
+		55+       & 16.15 \\
+	}\mydata
+	
+	\begin{tikzpicture}
+		\begin{axis}[
+			ybar,
+			bar width=.8cm,
+			width=1\textwidth,
+			height=0.5\textwidth,
+			legend style={at={(0.5,1)},
+				anchor=north,legend columns=-1},
+			symbolic x coords={17,18--23,24--30,31--40,41--54,55+},
+			xtick=data,
+			nodes near coords,
+			nodes near coords align={vertical},
+			ymin=0,ymax=30,
+			ylabel={Usuários\%},
+			]
+			%        \addplot table[x=interval,y=carT]{\mydata};
+			%        \addplot table[x=interval,y=carD]{\mydata};
+			\addplot table[x=interval,y=carR,fill=RYB4]{\mydata};
+			\legend{Faixa de idade}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\vspace*{-0.5cm}
+	\par
+	\bigskip
+	\small  Compilado pelo SPSS da pesquisa de campo
+\end{table}
+\par
+
+
+
+
+
+Packages may be found on 
+\cooltooltip{CTAN}{A link to CTAN}{http://www.ctan.org/}{Visit CTAN on	the web}{CTAN}.
+
+\cooltooltip
+[0 0 1]
+{Example}
+{This is an example of a cool tooltip. Pretty cool, eh?}
+{http://www.ctan.org/}{Visit CTAN on the Web}
+{This text\strut}
+
+\cooltooltip
+[0 0 1]
+{Example}
+{This is an example of a cool tooltip. Pretty cool, eh?}
+{http://www.ctan.org/}{Visit CTAN on the Web}
+{This text\strut}
+
+\cooltooltip [hpopup colori] [hlink colori]
+{hsubjecti} {hmessagei} {hurli} {htooltipi} {htexti}
+
+
+\cooltooltip [1 0 0]{Verificação de pacote}{~Este link abre meu GDrive~}{https://drive.google.com/drive/u/2/folders/1kXfYhZI4ohhAV-T8iRcpWZgwWniTf1Gb}{Google Drive David}{GDrive\strut}
+
+\cooltooltiptoggle{\fcolorbox{black}{yellow}{Under no circumstances turn this knob.}}
+
+
+\cooltooltiptoggle {\fcolorbox{black}{gray!30}{http://www.ctan.org/}}
+
+
+
+
+
+
+
+
+
+		
+
+
+
+\begin{filecontents}{conteudo.tex}
+	File 1
+\end{filecontents}
+
+\begin{filecontents*}{conteudo.tex}
+	File 2
+\end{filecontents*}
+
+
